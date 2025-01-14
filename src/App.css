@@ -1,0 +1,81 @@
+.container {
+  background-color: rgb(71, 73, 73);
+  height: 80vh;
+  width: 30%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 445px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.buttons {
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+}
+
+button {
+  height: 100%;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777675b1;
+}
+
+button:active {
+  background-color: #feb60059;
+}
+
+h2 {
+  margin-top: 20px;
+  height: 30px;
+  color: white;
+  overflow: hidden; /* Ensures content does not overflow */
+  white-space: nowrap; /* Prevents text wrapping */
+  text-overflow: ellipsis; /* Adds ellipsis if content is too long */
+  width: 90%; /* Ensures it respects the container's width */
+  text-align: right;
+}
+
+h1 {
+  color: #feb800;
+  font-size: 2rem;
+  margin: 0;
+  text-align: right;
+  width: 90%;
+}
+
+hr {
+  border: 1px solid #feb800;
+  opacity: 0.5;
+  width: 100%;
+}
